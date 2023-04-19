@@ -59,6 +59,7 @@ body {
     padding: 12px;
     font-size: 15px;
     font-weight: 500;
+    width: 100%;
 }
 
 .btn-group {
@@ -94,6 +95,7 @@ ul li {
     position: relative;
     background-color: rgba(255, 255, 255, 0.158);
     border-radius: 10px;
+    word-wrap: break-word;
 }
 
 ul li::before {
