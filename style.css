@@ -26,7 +26,16 @@ body {
     -webkit-backdrop-filter: blur( 9px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.3s;
+    position: relative;
+    z-index: 99;
 }
+
+.todo-app:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 36px 0 rgba(31, 38, 135, 0.25);
+}
+
 
 .todo-app h2 {
     display: flex;
@@ -46,8 +55,8 @@ body {
     align-items: center;
     background: rgba(255, 255, 255, 0.795);
     border-radius: 30px;
-    padding-left: 20px;
     margin-bottom: 25px;
+    padding: 2px;
 }
 
 .row-group input {
@@ -60,6 +69,13 @@ body {
     font-size: 15px;
     font-weight: 500;
     width: 100%;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.row-group input:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.017);
 }
 
 .btn-group {
@@ -79,6 +95,13 @@ body {
     background: rgb(196,71,71);
     background: linear-gradient(90deg, rgba(196,71,71,1) 22%, rgba(231,153,114,1) 100%);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-add_task:hover {
+    background: rgb(196,71,71);
+    background: linear-gradient(90deg, rgb(209, 85, 85) 22%, rgb(241, 174, 141) 100%);
+    transform: scale(1.1);
 }
 
 ul {
@@ -148,6 +171,13 @@ ul li span:hover {
     background: rgb(196,71,71);
     background: linear-gradient(90deg, rgba(196,71,71,1) 22%, rgba(231,153,114,1) 100%);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-clear:hover {
+    background: rgb(196,71,71);
+    background: linear-gradient(90deg, rgb(209, 85, 85) 22%, rgb(241, 174, 141) 100%);
+    transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
